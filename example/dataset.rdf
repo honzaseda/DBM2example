@@ -1,0 +1,502 @@
+<http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> <http://mre.zcu.cz/ontology/dasta.owl#addressZIP> "33038"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> <http://mre.zcu.cz/ontology/dasta.owl#addressCityPart> "Úněšov 8O"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> <http://mre.zcu.cz/ontology/dasta.owl#addressCity> "Úněšov"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> <http://purl.org/dc/elements/1.1/title> "Úněšov (33038)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#PermanentAddress> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Aktinické keratozy obličeje a kůže skalpu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_L570> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://purl.org/dc/elements/1.1/title> "2014-05-07 (1) L57.0 - Aktinické keratozy obličeje a kůže skalpu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_C20> .
+<http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> <http://purl.org/dc/elements/1.1/title> " (1) C20"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/mre.owl#Dataset> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasDataSource> <http://mre.zcu.cz/id/e84ba846ba7db62586acb544f77973e76142e17e> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://purl.org/dc/elements/1.1/title> "FNPL 2015-08-13" .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> .
+<http://mre.zcu.cz/id/def4d2583240d1371c6e1e2cb831c614ea2752ca> <http://mre.zcu.cz/ontology/mre.owl#hasData> <http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Fokální steatóza jater v S4. Drobná cysta v S6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_D376> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://purl.org/dc/elements/1.1/title> "2013-04-18 (1) D37.6 - Fokální steatóza jater v S4. Drobná cysta v S6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, KZM - PETCT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, KZM - PETCT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#OriginatorDepartment> .
+<http://mre.zcu.cz/id/b22ac0e2312103931be9a814be8eea5382ce1075> <http://mre.zcu.cz/ontology/dasta.owl#icp> "20439999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b22ac0e2312103931be9a814be8eea5382ce1075> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, CHK - lůžka B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b22ac0e2312103931be9a814be8eea5382ce1075> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, CHK - lůžka B"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b22ac0e2312103931be9a814be8eea5382ce1075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> .
+<http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_C56> .
+<http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> <http://purl.org/dc/elements/1.1/title> " (1) C56"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/e673beb6c460a5906dc2f2fdb6d2d0a5156e1513> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "f55982eb19cc62bd4ecad6475c47d1d506915baf" .
+<http://mre.zcu.cz/id/e673beb6c460a5906dc2f2fdb6d2d0a5156e1513> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/e673beb6c460a5906dc2f2fdb6d2d0a5156e1513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://purl.org/dc/elements/1.1/title> "2014-10-07 23:21: 101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "MR jater\n\nProvedeno na 3T přístroji nativně vzhledem k udávané alergii, v T1 VIBE (ax.), T2 HASTE (cor.), T2 HASTE FS (ax.), T1 VIBE FS (ax.) a DWI (ax.).\n\nSt.p. nenantomické resekci S6, 7 a 8 jater pro metastázu, zbylý jater. parenchym. kompenzatorně hypertrofický, při resekšní ploše je na T2 sekv. patrná oblast zvýšené intenzity signálu rozsahu 63 x 37 x 35 mm a na T1 VIBE FS diferencuji v této oblasti hypersignální ovoidní laločnatý útvar vel. 38 x 20 25 mm - v.s. pooperační změny s reziduálním hematom, nález je ve shodě s min. vyš., bez nových ložisek. Žl. cesty bez dilatace, st.p. CHE.\nDo jizvy ve stěně břišní laterálně v pravém epigastriu je patrné přitažení hepatálního ohbí tračníku. Ledviny menší velikosti, s redukci šíře parenchymu a vícečetnými drobnými cystami. Lipodystrofický pankreas.\n\nZávěr: nález ve shodě s min. vyš. 11/2013 - v.s. pooper. změny při resekční ploše jater, bez nových patol. změn."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/23921f124230b44e0a92f0830c42cb0f802e88b9> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "59988677"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-10-07T23:21:00+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "62915228"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/e29b291c3eedb2acdc8797a302aff6d398cf875d> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://purl.org/dc/elements/1.1/title> "2014-11-23 23:23: 111/002 - PET/CT trupu 18FDG bez k.l. i.v."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "Průběh vyšetření:\nPET záznam jsme provedli za 90 min. po aplikaci 18FDG  (2-[18F]fluor-2-deoxy-D-glukózy) o aktivitě 353  MBq. Glykémie před aplikací 7,9 mmol/l. CT záznam jsme provedli po perorálním podání 1 litru 2,5% roztoku manitolu, intravenózně kontrastní látka nebyla podána, nebot nemocný udává alergii na jód\nVyšetření bylo provedeno v rozsahu od baze lební až po oblast třísel za použití PET/CT přístroje Biograph HiRez/16 slice.\n\nIndikace: Ca recti po resekci, st. p. jaterní a plicní resekci\n\nNález:\nv horním laloku  levé plíce poblíž interlobia změnšené ložisko ve srovnání s min. CT vyš na 4 mm,  další neaktivní ložisko vel 4 mm v horním laloku pavé plíce, dále několik velice malých ložisek do 2 mm v obou plicích. St. p. resekci vlevo  v horním laloku bez  metabolicky aktivního residua tkáně. St. p. thorakotomii velvo. Na krku, v axilách, mediastinu, retroperitoneu, pánvi  a tříslech bez zvětšených nebo FDG akumulujících uzlin. Perikardiální vak a pleurální dutiny bez tekutiny. Játra bez zřetelných ložisek v nativním obraze, st. p. resekci pr. laloku, intrahepatální i extrahepatální žlučové cesty jsou štíhlé. Pankreas nezvětšen. Slezina homogenní normální velikosti. Ledviny bez ložiskového procesu,  se štíhlým dutým systémem. Nadledviny nezvětšeny. Močový měchýř je normální velikosti s jemnou stěnou. Skelet bez patologického obratu FDG. Dutina břišní bez známek volné tekutiny. V pánvi st. p. resekci rekta, presakrálně infiltrát s dutinou vyplněnou plynem a stěnou, která dosahuje vysoké akumulace FDG (SUVmax 11). Hernie jizvy po hepatektomii.\n\nZávěr:  Metabolicky aktivní presakrální infiltrát, u nějž nelze spolehlivě rozhodnout mezi  zánětlivými sekundárními zěmnami a lokální recidivou, doporučuji další sledování vývoje. V dalším rozsahu bez známek metabolicky aktivní disseminace Ca recti."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "111/002 - PET/CT trupu 18FDG bez k.l. i.v."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-11-23T23:23:00+0100"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/e334d34463678e290a107f4c372dca33d573de82> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "82990909ea2a67c40fdb227710bcfbefda44bd95" .
+<http://mre.zcu.cz/id/e334d34463678e290a107f4c372dca33d573de82> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/e334d34463678e290a107f4c372dca33d573de82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/5da1090c106135da474af76f57597b3b76a5e8d6> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "f0ef72da3cfff5f20fe019a14be76321f8f185d7" .
+<http://mre.zcu.cz/id/5da1090c106135da474af76f57597b3b76a5e8d6> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/5da1090c106135da474af76f57597b3b76a5e8d6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> <http://mre.zcu.cz/ontology/dasta.owl#addressZIP> "78313"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> <http://mre.zcu.cz/ontology/dasta.owl#addressCityPart> "Štěpánov"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> <http://mre.zcu.cz/ontology/dasta.owl#addressCity> "Štěpánov u Olomouce"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> <http://purl.org/dc/elements/1.1/title> "Štěpánov u Olomouce (78313)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#PermanentAddress> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://purl.org/dc/elements/1.1/title> "rnn51501.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:05-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51501.xml" .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51501.xml" .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851501"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/2132798827e3d2d03fd3676da802eddff547fe4b> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/b22ac0e2312103931be9a814be8eea5382ce1075> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51501"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "345753" .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> .
+<http://mre.zcu.cz/id/bc9480119f9de2db64b9769ae89c07b71a325388> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/6e9362da2aa9d3e6b8c58a90f5bf62d75515b734> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "657fb3e977f01d70d0cc7e57e3875bb06cf737b1" .
+<http://mre.zcu.cz/id/6e9362da2aa9d3e6b8c58a90f5bf62d75515b734> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/6e9362da2aa9d3e6b8c58a90f5bf62d75515b734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://purl.org/dc/elements/1.1/title> "2014-10-19 23:22: 032/000 - CT vyšetření"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "CT břicha:\n\nProvedeno s Kl i.v. v arteriální a venozní fázi.\n\nJátra jsou zvětšená (kraniokaudálně v MC čáře 20 cm) a výrazně steatotická (denzita parenchymu do 20 HU). V parenchymu jsou mnohočetná hyperdenzní ložiska velikosti od několika mm do 38 mm v arteriální i venozní fázi. Mezi arteriální a venozní fází dochází k jejich dosycování. Největší ložisko je v kaudální části pr. laloku. Ostatní nález na orgánech epigastria je normální.\n\nZávěr: Hepatomegalie a výrazná steatoza. Mnohočetná ložiska v játrech. Vzhledem ke steatoze je obraz nespecifický, spíše benigního charakteru u menších ložisek lze vzít v úvahu i hemangiomy, u větších spíše FNH nebo také peliosis hepatis. Jako optimální další postup doporučuji doplnění MRI s hepatocytární specifickou KL."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-10-19T23:22:00+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "032/000 - CT vyšetření"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "62759190"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:04-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851500"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "474795" .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51500"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://purl.org/dc/elements/1.1/title> "rnn51500.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/e5051e92fe609c04477a6a5b39511a278eca4d62> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51500.xml" .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/980242049b60bc4881fc38f8128503799a60dbd0> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51500.xml" .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:05-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/b9dab591b673e8bf606a0b7fd2cf074a00a6f73c> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51503.xml" .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://purl.org/dc/elements/1.1/title> "rnn51503.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51503.xml" .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "146080" .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/6e9362da2aa9d3e6b8c58a90f5bf62d75515b734> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51503"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> .
+<http://mre.zcu.cz/id/d7b95e433a15ec97c8fb87612cea34c8edac1f96> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851503"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Dyspeptický syndrom horního typu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_K30> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://purl.org/dc/elements/1.1/title> "2013-04-18 (2) K30 - Dyspeptický syndrom horního typu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/e84ba846ba7db62586acb544f77973e76142e17e> <http://purl.org/dc/elements/1.1/title> "FNPL" .
+<http://mre.zcu.cz/id/e84ba846ba7db62586acb544f77973e76142e17e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/mre.owl#DataSource> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://purl.org/dc/elements/1.1/title> "2014-11-23 23:23: 101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-11-23T23:23:00+0100"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "MRI jater:\n\nProvedeno na 3T přístroji nativně v T1 VIBE (ax.), T2 HASTE (ax.), T2 TSE (ax.), T2 BLADE (ax.) a DWI (ax.) a dynamicky po aplikaci hepatocytární specifické kontrastní látky v T1 VIBE (ax., cor.).\n\nJátra zvětšená (kraniokaudálně 23cm), s výraznou steatózou a mnohočetnými ložisky (jejichž signál je modifikovaný steatózou) v obou lalocích. V T2 v.o. proti steatotickému parenchymu hypointenzivní, v T1 v.o. převážně hypointenzivní, menší ložiska jsou poměrně homogenní, největší v S6 je nehomogenní ( centrálně s vyšším signálem). Postkontrastně se ložiska mírně sytí  - maximum v portální fázi, poté se postupně vymývají, v odložené fázi jsou proti nasyceným játrům lehce hypointenzivní s naznačeným hyperintenzivním lemem. Nález není typický pro hemangiomy ani FNH, může jít o adenomy či dysplastické uzle, maligní etiologie méně pravděpodobná, jednoznačně vyloučit ji však nelze. Dopor. ještě doplnit CEUS ( nejlépe od dr. MI), při nejasnosti zvážit biopsii největšího ložiska v S6.\nSlezina, pankreas, nadledviny - bez patologie. Ojedinělá cysta pr. ledviny, jinak bez patologie na ledvinách.  \n\nZávěr : hepatomegalie s pokročilou steatózou a mnohočetnými ložisky - nezcela jednoznačné etiologie - spíše adenomy čidysplastické uzle. K bližšímu posouzení dopor. ještě doplnit CEUS."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "63270003"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> .
+<http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> <http://mre.zcu.cz/ontology/dasta.owl#icp> "20319999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, CHK - poradna jaterní chirurgie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, CHK - poradna jaterní chirurgie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/54fbeff8617b726513e61fc9696c7cbcb86b1029> <http://mre.zcu.cz/ontology/dasta.owl#icp> "33019999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/54fbeff8617b726513e61fc9696c7cbcb86b1029> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, ORAK - Ambulance č.1 - RT 2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/54fbeff8617b726513e61fc9696c7cbcb86b1029> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, ORAK - Ambulance č.1 - RT 2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/54fbeff8617b726513e61fc9696c7cbcb86b1029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/fc5650770996d480a766c018a65f1f5d57c4b2bd> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "a0a627c7715b73797055c0eb73cb5f0d07004a6f" .
+<http://mre.zcu.cz/id/fc5650770996d480a766c018a65f1f5d57c4b2bd> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/fc5650770996d480a766c018a65f1f5d57c4b2bd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBirth> "1985-06-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Female> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#sex> "F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Patient> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#address> <http://mre.zcu.cz/id/5e484123086812c3f41c1d88958dcb0acaebfcdb> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://purl.org/dc/elements/1.1/title> "FNPL_281 (F) * 1985-06-25"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#lastName> "FNPL_281"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#sexPOHLAV> <http://mre.zcu.cz/ontology/dscl.owl#POHLAV_2> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#patientID> "281"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> <http://mre.zcu.cz/ontology/dasta.owl#sexNCLPTPS> <http://mre.zcu.cz/ontology/dscl.owl#NCLPTPS_F> .
+<http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_D376> .
+<http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> <http://purl.org/dc/elements/1.1/title> " (1) D37.6"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51546.xml" .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://purl.org/dc/elements/1.1/title> "rnn51546.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851546"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51546.xml" .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:15:08-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51546"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "142017" .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:57:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/5da1090c106135da474af76f57597b3b76a5e8d6> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/d8502b7d774861547d38343645a9f52b163d08cd> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/5ff8d34df5bede60dae4bf1a7c0f07a06eba7941> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://purl.org/dc/elements/1.1/title> "FNPL_282 (F) * 1988-12-15"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#lastName> "FNPL_282"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Female> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#sex> "F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#patientID> "282"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#sexNCLPTPS> <http://mre.zcu.cz/ontology/dscl.owl#NCLPTPS_F> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#sexPOHLAV> <http://mre.zcu.cz/ontology/dscl.owl#POHLAV_2> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBirth> "1988-12-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#address> <http://mre.zcu.cz/id/8256d854fbfc2bfddcdb4daf0b71c8cc69e86aa4> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Patient> .
+<http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> .
+<http://mre.zcu.cz/id/e5051e92fe609c04477a6a5b39511a278eca4d62> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "1146c7d4d4abab2d2a540d8451ff9eaeaaffc182" .
+<http://mre.zcu.cz/id/e5051e92fe609c04477a6a5b39511a278eca4d62> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/e5051e92fe609c04477a6a5b39511a278eca4d62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "St. po otevřené fundoplikaci 2010, st po laparoskopické APPE 2003, st. po operacích laparoskopické operaci  pro cysty ad"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_Z924> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-04-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://purl.org/dc/elements/1.1/title> "2013-04-16 (5) Z92.4 - St. po otevřené fundoplikaci 2010, st po laparoskopické APPE 2003, st. po operacích laparoskopické operaci  pro cysty ad"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/2132798827e3d2d03fd3676da802eddff547fe4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "fee81b6d410ef03fd7d2edf52a1a09771fc116a7" .
+<http://mre.zcu.cz/id/2132798827e3d2d03fd3676da802eddff547fe4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/2132798827e3d2d03fd3676da802eddff547fe4b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> <http://mre.zcu.cz/ontology/dasta.owl#icp> "33079999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, ORAK - Ambulance č.6 - stacionář 1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, ORAK - Ambulance č.6 - stacionář 1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/fd790bc53f5b04b4c4e07111e40eab8d295ed5d5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://purl.org/dc/elements/1.1/title> "2014-09-28 23:22: 111/001 - PET/CT trupu 18FDG s k.l. i.v."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "111/001 - PET/CT trupu 18FDG s k.l. i.v."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "62100264"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "Průběh vyšetření:\nPET záznam jsme provedli za 90 min. po aplikaci 18FDG  (2-[18F]fluor-2-deoxy-D-glukózy) o aktivitě 203  MBq.\nGlykémie před aplikací: 6,0 mmol/l \nCT záznam jsme provedli po perorálním podání 1 litru 2,5% roztoku manitolu a 100 ml neionické jódové kontrastní látky.\nVyšetření bylo provedeno v rozsahu od baze lební až po oblast třísel za použití PET/CT přístroje Biograph HiRez/16 slice.\nPacient(ka) 30 min. po intravenózní aplikaci kontrastní látky nejevil(a) známky alergické reakce a byl(a) propuštěn(a) z oddělení.\n\nIndikace: karcinom ovaria restaging\n\nNález:\nVýrazné zvýšení metabolické aktivity hnědé tukové tkáně krku, šíje, mediastina mezižeběrních prostorů a tuku kolme bránice. Na krku, v axilách, mediastinu, retroperitoneu, pánvi  a tříslech bez zvětšených nebo FDG akumulujících uzlin. Plicní parenchym je bez ložisek. Adhese na  malém interlobiu. Perikardiální vak a pleurální dutiny bez tekutiny. Játra  s vícečetnými hemangiomy, bez hypermetabolických ložisek.. Žlučník je bez zřetelné litiázy, intrahepatální i extrahepatální žlučové cesty jsou štíhlé. Pankreas nezvětšen. Slezina homogenní normální velikosti. Ledviny bez ložiskového procesu,  se štíhlým dutým systémem. Nadledviny nezvětšeny. Močový měchýř je normální velikosti s jemnou stěnou.  St. p. lymfadenektomii retroperitonea se svorkami. Skelet bez patologického obratu FDG. Dutina břišní bez známek volné tekutiny. Kolem jater a dále parakolicky vlevo je přítomna zvýšená akumulace FDG, která může být způsobena zvýšením obratu v hnědé tukové tkáni,  jedn se o pruhovitou akumulaci SUV max do 4 - 6 SUVmax\n\nZávěr: Bez jednoznačné disseminace TU ovaria, doporučuji však doplnění MRI jater k bezpečnému posouzení  jater a odlišení akumulace v hnědé tukové tkáni a peritoneálního nálezu"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-09-28T23:22:00+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/5525b2f0ba5b969d85b2be621099dc9ce5f11247> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/e334d34463678e290a107f4c372dca33d573de82> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://purl.org/dc/elements/1.1/title> "rnn51498.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51498.xml" .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851498"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:04-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "60054" .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51498.xml" .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51498"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/97d31bb1113af39cdb4508a3dcd1a83125b0cd4b> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Zhoubný novotvar konečníku - recta"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_C20> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://purl.org/dc/elements/1.1/title> "2014-05-07 (3) C20 - Zhoubný novotvar konečníku - recta"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e8f4793c0fd0f7abb8f9a5873ccfd07558f58712> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51499.xml" .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:04-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/a3316b31e8bd135787c293158a7c78299db9efcc> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851499"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "200342" .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/e673beb6c460a5906dc2f2fdb6d2d0a5156e1513> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51499.xml" .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://purl.org/dc/elements/1.1/title> "rnn51499.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51499"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8eaa6b584e6028e91c48d342027de242d7b44207> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Chemoterapeutický cyklus pro novotvar - V. série paliativní  pooperační chemoterapie FOLFIRI"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_Z511> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://purl.org/dc/elements/1.1/title> "2014-05-07 (2) Z51.1 - Chemoterapeutický cyklus pro novotvar - V. série paliativní  pooperační chemoterapie FOLFIRI"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/837c59896fa2c1e5a82c53add216a231b3e0a6cf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/e428eabe7cd57d189ba13e60b7ad0fc0f8ed8ecc> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#lastName> "FNPL_280"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Female> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Patient> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/f89dca352441799daeab455986298412a578267e> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#address> <http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#sex> "F"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBirth> "1991-07-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#patientID> "280"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://purl.org/dc/elements/1.1/title> "FNPL_280 (F) * 1991-07-14"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#sexPOHLAV> <http://mre.zcu.cz/ontology/dscl.owl#POHLAV_2> .
+<http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> <http://mre.zcu.cz/ontology/dasta.owl#sexNCLPTPS> <http://mre.zcu.cz/ontology/dscl.owl#NCLPTPS_F> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "62591402"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://purl.org/dc/elements/1.1/title> "2014-11-16 23:23: 101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "MRI jater:\nProvedeno na 1,5 T přístroji nativně v T2 TSE (ax), T2 HASTE (ax), T1 Flash 2D opp phase (ax), DWI (ax) a VIBE (ax) a po dyamicky aplikaci hepatocytární specifické kontrastní látky ve VIBE (ax a kor)\n\nPrakticky ve všech jaterních segmentech jsou přítomné v T2 w. hyperintenzní léze, největší vel.  18 mm v S8/5. Všechna ložiska jsou bez restrikce difuze a po aplikaci k.l. se nabarvují od periferie a v odložených fázích jsou vůči nabarveným játrům hypointenzní. Z MR hlediska jde o hemangiomy.\nLéze jiného charakteru v játrech nejsou patrné."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-11-16T23:23:00+0100"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/dc888071a356807d3fd7c953edeb1fda99d6edf9> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/654166fdb739eb40a07d4370508a05be6560dca9> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/d9186c568919bdc5de24c0d27b88fefbe8f5f03c> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashValue> "d379bf048b20509186b66fc1afe5d282cf613144" .
+<http://mre.zcu.cz/id/d9186c568919bdc5de24c0d27b88fefbe8f5f03c> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hashAlgorithm> "SHA-1" .
+<http://mre.zcu.cz/id/d9186c568919bdc5de24c0d27b88fefbe8f5f03c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileHash> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Esenciální (primární) hypertenze"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_I10> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2014-05-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://purl.org/dc/elements/1.1/title> "2014-05-07 (4) I10 - Esenciální (primární) hypertenze"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/db787e03b700ebb4568e63f69d244de1cf1f99f0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/f1b0828c9fdce7986a1fb6a51faace51a1d66951> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://purl.org/dc/elements/1.1/title> "2013-08-08 01:31: 101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-08-08T01:31:00+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "101/007 - MR jater"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "MRI jater:\nProvedeno na 3T přístroji nativně v T1 VIBE (ax.), T2 HASTE (ax.), T2 TSE (ax.), T2 BLADE (ax.) a DWI (ax.) a dynamicky po aplikaci hepatocytární specifické kontrastní látky v T1 VIBE (ax., cor.).\n\nV játrech v S4 a částečně v okraji S8 je okrsek vel. 27 x 37 x cca 50 mm odlišných signálních charakteristik v porovnání s ostatním jaternám parenchymem. nejlépe zřetelný je v T1 vibe opposed phase, kde je hyposignální, v DWI trace je mírně hyposignální, po podání kontrastní látky je lehce opožděné sycení, v odložených fázích se chová obdobně jako ostatní jaterní parenchym. Oproti okolí je okrsek ostře ohraničen, vzhledem k topografii cév se nechová expanzivně - má charakter fokální steatózy. V S6 je drobná cysta vel. 4 mm. Jinak játra bez ložiskových změn.\n\nZávěr: Fokální steatóza jater v S4. Drobná cysta v S6. Jinak játra bez ložisek.\nKT"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "56513648"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "St. po otevřené fundoplikaci 2010, st po laparoskopické APPE 2003, st. po operacích laparoskopické operaci  pro cysty ad"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_Z924> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://purl.org/dc/elements/1.1/title> "2013-04-18 (3) Z92.4 - St. po otevřené fundoplikaci 2010, st po laparoskopické APPE 2003, st. po operacích laparoskopické operaci  pro cysty ad"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://mre.zcu.cz/ontology/dasta.owl#diagDetail> "Nikotinismus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_T652> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-04-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://purl.org/dc/elements/1.1/title> "2013-04-18 (4) T65.2 - Nikotinismus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#sex> "M"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Patient> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#sexNCLPTPS> <http://mre.zcu.cz/ontology/dscl.owl#NCLPTPS_M> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/6aced133cf49c18dd23272b70349bad47c20c135> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#address> <http://mre.zcu.cz/id/dd30bc609b812ed8b44f366a95c58ef253d8487b> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBirth> "1942-11-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#lastName> "FNPL_279"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#Male> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#patientID> "279"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://mre.zcu.cz/ontology/dasta.owl#sexPOHLAV> <http://mre.zcu.cz/ontology/dscl.owl#POHLAV_1> .
+<http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> <http://purl.org/dc/elements/1.1/title> "FNPL_279 (M) * 1942-11-11"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> <http://mre.zcu.cz/ontology/dasta.owl#applicationVersion> "7.0.14.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> <http://mre.zcu.cz/ontology/dasta.owl#applicationCompanyName> <http://mre.zcu.cz/ontology/dscl.owl#TABKF_MEDICALC> .
+<http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> <http://mre.zcu.cz/ontology/dasta.owl#applicationCodeName> "WMEXP"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> <http://purl.org/dc/elements/1.1/title> "WMEXP 7.0.14.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#InformationSystem> .
+<http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> .
+<http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_C910> .
+<http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> <http://purl.org/dc/elements/1.1/title> " (1) C91.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/cc55e5753e3e4f90c351794fc7a5aa7efa245d08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://mre.zcu.cz/ontology/dasta.owl#addressZIP> "32300"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://mre.zcu.cz/ontology/dasta.owl#addressCityPart> "Severní Předměstí"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://mre.zcu.cz/ontology/dasta.owl#addressCityPart> "Bolevec"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://mre.zcu.cz/ontology/dasta.owl#addressCity> "Plzeň 23"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://purl.org/dc/elements/1.1/title> "Plzeň 23 (32300)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e4d64dbf9ed41f4b49a7dcfcc515bf1e136f5694> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#PermanentAddress> .
+<http://mre.zcu.cz/id/a3316b31e8bd135787c293158a7c78299db9efcc> <http://mre.zcu.cz/ontology/dasta.owl#icp> "16239999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/a3316b31e8bd135787c293158a7c78299db9efcc> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, DK - hematologická poradna"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/a3316b31e8bd135787c293158a7c78299db9efcc> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, DK - hematologická poradna"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/a3316b31e8bd135787c293158a7c78299db9efcc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/a787e4707e4afa98a652d7b01c25a7dbd8d9ad85> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#reportText> "CTAG břišní aorty+ CT jater:\nVyšetření provedeno po podání k.l. i.v., dvoufázově\n\nBřišní aorta normální šíře, odstupy viscerálních tepen jsou volné. V pánvi AIC AIE i AII bilat. bez patrných kalcifikací či měkkých plátů, bez stenóz.  AFC bilat. a zachycená část AFS a AFP bilat. bez stenóz.\nV játrech v S4 (část přesahující i do S8) ve venozní i art. fázi mírně hypodenzní ložisko ložisko vel. cca 25x50x55 mm- fokální steatóza. Cystu vel. 4 mm v S6 jater popisovanou na MR vyšetření 7.3.2013 při dnešním vyš. nediferencuji. Žlučník bez konkrementu, žlučové cesty štíhlé. Pankreas, slezina, nadledviny a ledviny bez patrné patologie.  St.p. fundoplikaci žaludku, okolí klidné,  drobné divertikly sigmatu, jinak zachycené části tenkého a tlustého střeva v přehledném rozsahu bez patrné patologie. Močový měchýř naplněn. Děloha v AV s mírně hyperdenzní, nerozšířenou stěnou, v.s. v rámci cyklu. Bez zvětšených uzlin v retroperitoneu, mesenteriu, pánvi a tříslech. \nSkelet bez tr. změn. Vrozeně úzký kanál páteřní v oblasti dolní LS páteře ( sagit. 12-13mm). Mírné dorsální protruze disku L4/5 a L/S1 způsobují až relativní stenózu páteř. kanálu. \nZachycené plicní baze rozvinuty, bez ložiskových změn, pleur. recesy bez tekutiny.\n\nZávěr: \nFokální steatóza jater v S4/8. Drobnou cystu v S6 proti min. MR vyš. nediferencuji.\n\n/du"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest> <http://mre.zcu.cz/ontology/dscl.owl#LZTZOV_D> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/8542d71d49e8c28b052eaa4a585668e56586bdb3> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/9758f652f07a2d2068bd30acd96a4345384cbc20> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent> <http://mre.zcu.cz/ontology/dscl.owl#LZSOZ_NL> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/63a03e9b3d1734083392f8f2228e10e0ee16c968> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState> <http://mre.zcu.cz/ontology/dscl.owl#LZSZZ_K> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://purl.org/dc/elements/1.1/title> "2013-09-18 01:31: 032/000 - CT vyšetření"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin> <http://mre.zcu.cz/ontology/dscl.owl#LZTOZV_J> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent> "2013-09-18T01:31:00+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#diagnosis> <http://mre.zcu.cz/id/0ef49582c2dd38bebe4b6d4d6e6204a054f8897a> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber> "57141248"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/d15a3c1cd393960a12405c362abff3d0010ac9ce> <http://mre.zcu.cz/ontology/dasta.owl#reportTitle> "032/000 - CT vyšetření"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b9dab591b673e8bf606a0b7fd2cf074a00a6f73c> <http://mre.zcu.cz/ontology/dasta.owl#icp> "01129999"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b9dab591b673e8bf606a0b7fd2cf074a00a6f73c> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, 1IK - gastroenterologie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b9dab591b673e8bf606a0b7fd2cf074a00a6f73c> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, 1IK - gastroenterologie"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/b9dab591b673e8bf606a0b7fd2cf074a00a6f73c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment> .
+<http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, KZM - Výpočetní tomografie (CT)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, KZM - Výpočetní tomografie (CT)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/44040e7024d5a4cc177bf0ed29683c2185dbd05b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#OriginatorDepartment> .
+<http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/ba613d1fc0d9300175611e31cca7cf9f525056cb> .
+<http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> <http://mre.zcu.cz/ontology/dasta.owl#diagOrder> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> <http://mre.zcu.cz/ontology/dasta.owl#diagCode> <http://mre.zcu.cz/ontology/dscl.owl#MKN105_K30> .
+<http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> <http://purl.org/dc/elements/1.1/title> " (1) K30"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e2ca97527ebbce9dcd3b02cb649a7a621b855914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://purl.org/dc/elements/1.1/title> "rnn51502.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51502"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51502.xml" .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T18:00:05-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/d9186c568919bdc5de24c0d27b88fefbe8f5f03c> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "144443" .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/6920bf321e5c1bacdc60417d60ec8a93903eaf72> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:46:36+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/b976f6f335984ab90f0f478e8a1637eabe7d8> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851502"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51502.xml" .
+<http://mre.zcu.cz/id/8508e58d9d99fdd2b978fe6c22a264cfae737b3d> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/5058ee279b2fb00015dda1771b57728bb960bc96> .
+<http://mre.zcu.cz/id/dd30bc609b812ed8b44f366a95c58ef253d8487b> <http://mre.zcu.cz/ontology/dasta.owl#addressZIP> "33501"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/dd30bc609b812ed8b44f366a95c58ef253d8487b> <http://mre.zcu.cz/ontology/dasta.owl#addressCity> "Nepomuk 1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/dd30bc609b812ed8b44f366a95c58ef253d8487b> <http://purl.org/dc/elements/1.1/title> "Nepomuk 1 (33501)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/dd30bc609b812ed8b44f366a95c58ef253d8487b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#PermanentAddress> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent> <http://mre.zcu.cz/id/4ef57179a26b60a477207df5a8da07ed94630fda> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#DASTA> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated> "2015-08-13T09:35:37+0200"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#recipient> <http://mre.zcu.cz/id/54fbeff8617b726513e61fc9696c7cbcb86b1029> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#informationSystem> <http://mre.zcu.cz/id/efd1a3216111de5955643466286d8a12b4a6992e> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#nclpVersion> <http://mre.zcu.cz/ontology/dscl.owl#VNLCP_02.01.01> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#fileCode> "51473"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#fileId> "MEDICALC_WMEXP_7.0.14.0_000000002851473"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileSize> "420523" .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#urgentFlag> "R"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileLastModified> "2015-08-18T17:45:02-00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#hasHash> <http://mre.zcu.cz/id/fc5650770996d480a766c018a65f1f5d57c4b2bd> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#patient> <http://mre.zcu.cz/id/1407c2b75f43d3691c240e28204533da74ee4054> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://purl.org/dc/elements/1.1/title> "rnn51473.xml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://purl.org/dc/terms/format> "dasta" .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/mre.owl#filePath> "/home/services/datastore/raw/FNPL/xml/2015/20150813/rnn51473.xml" .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode> <http://mre.zcu.cz/ontology/dscl.owl#TABTO_NN> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#dastaVersion> <http://mre.zcu.cz/ontology/dscl.owl#VDS_03.10.01> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://mre.zcu.cz/ontology/dasta.owl#originator> <http://mre.zcu.cz/id/10b1c17781a60ed9ff6f6ebde8537e18c89c612b> .
+<http://mre.zcu.cz/id/c0a9ba894ee843bcb39b553483ef1e848027376d> <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "rnn51473.xml" .
+<http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> <http://mre.zcu.cz/ontology/dasta.owl#departmentName> "Fakultní nemocnice Plzeň, KZM - Magnetická rezonance (MR)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> <http://purl.org/dc/elements/1.1/title> "Fakultní nemocnice Plzeň, KZM - Magnetická rezonance (MR)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://mre.zcu.cz/id/e1143e8c633bd256aa6d349a96c4fef7532f7b78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mre.zcu.cz/ontology/dasta.owl#OriginatorDepartment> .

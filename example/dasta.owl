@@ -1,0 +1,2394 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY sits "http://mre.zcu.cz/ontology/sits.owl#" >
+    <!ENTITY dscl "http://mre.zcu.cz/ontology/dscl.owl#" >
+    <!ENTITY ds "http://mre.zcu.cz/ontology/dasta.owl#" >
+    <!ENTITY dcm "http://mre.zcu.cz/ontology/dicom.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY nfo "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#" >
+]>
+
+
+<rdf:RDF xmlns="http://mre.zcu.cz/ontology/dasta.owl#"
+     xml:base="http://mre.zcu.cz/ontology/dasta.owl"
+     xmlns:sits="http://mre.zcu.cz/ontology/sits.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ds="http://mre.zcu.cz/ontology/dasta.owl#"
+     xmlns:dcm="http://mre.zcu.cz/ontology/dicom.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:nfo="http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#"
+     xmlns:dscl="http://mre.zcu.cz/ontology/dscl.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://mre.zcu.cz/ontology/dasta.owl">
+        <rdfs:comment>2013-05-03: The first public version.
+2013-10-01: Major changes due to MRE medical data integration.
+2014-05-15: Added links to other ontologies. Namespace without version, used owl:versionIRI instead.
+2014-06-04: Finalized DASTA Ontology version 2014/01.
+2016-03-10: added SITS Ontology support.
+2016-04-25: Data/Object type properties fixed.
+</rdfs:comment>
+        <owl:versionInfo>2016/04</owl:versionInfo>
+        <dc:publisher>Department of Computer Science and Engineering 
+University of West Bohemia
+Univerzitni 8
+306 14 Plzen
+Czech Republic</dc:publisher>
+        <dc:issued>2016-04-25</dc:issued>
+        <dc:contributor>Petr Vcelak</dc:contributor>
+        <dc:title>DASTA Ontology</dc:title>
+        <dc:modified>2016-04-25</dc:modified>
+        <dc:description xml:lang="cs">Ontologie DAtového STAndardu (DASTA). DASTA je výměnný formát pro klinická data. Jedná se o národní standard platný v České republice.</dc:description>
+        <dc:title xml:lang="cs">Ontologie formátu DASTA</dc:title>
+        <dc:description>The DAta STAndard (DASTA) Ontology. The DASTA is the Czech Republic national standard for clinical data intechange format.</dc:description>
+        <dc:rights>Petr Vcelak</dc:rights>
+        <owl:imports rdf:resource="https://mre.zcu.cz/ontology/dicom.owl"/>
+        <owl:imports rdf:resource="https://mre.zcu.cz/ontology/dscl.owl"/>
+        <owl:imports rdf:resource="https://mre.zcu.cz/ontology/sits.owl"/>
+        <owl:versionIRI rdf:resource="https://mre.zcu.cz/ontology/2016/04/dasta.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dastaAttribute -->
+
+    <owl:AnnotationProperty rdf:about="&ds;dastaAttribute">
+        <rdfs:label xml:lang="cs">Atribut v DASTA formátu</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA attribute</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dastaElement -->
+
+    <owl:AnnotationProperty rdf:about="&ds;dastaElement">
+        <rdfs:label xml:lang="cs">Element DASTA</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA element</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dastaPath -->
+
+    <owl:AnnotationProperty rdf:about="&ds;dastaPath">
+        <rdfs:label xml:lang="cs">XPath v DASTA</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA XPath</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#address -->
+
+    <owl:ObjectProperty rdf:about="&ds;address">
+        <rdfs:label xml:lang="cs">adresa</rdfs:label>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:domain rdf:resource="&ds;Guarantee"/>
+        <rdfs:domain rdf:resource="&ds;OriginatorDepartment"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:domain rdf:resource="&ds;RecipientDepartment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#anamnesis -->
+
+    <owl:ObjectProperty rdf:about="&ds;anamnesis">
+        <rdfs:label xml:lang="cs">anamnéza</rdfs:label>
+        <rdfs:label xml:lang="en">anamnesis</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&ds;Anamnesis"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#applicationCompanyName -->
+
+    <owl:ObjectProperty rdf:about="&ds;applicationCompanyName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">kód firmy</rdfs:label>
+        <rdfs:label xml:lang="en">application company</rdfs:label>
+        <dastaAttribute>kod_firmy</dastaAttribute>
+        <dastaPath>/dasta/zdroj_is</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Kód firmy, jejímž programem byl vytvořen (tento) soubor.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;InformationSystem"/>
+        <rdfs:range rdf:resource="&dscl;TAB_KF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#attachment -->
+
+    <owl:ObjectProperty rdf:about="&ds;attachment">
+        <rdfs:label xml:lang="cs">příloha</rdfs:label>
+        <rdfs:label xml:lang="en">attachment</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&nfo;FileDataObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#clinicalEvent -->
+
+    <owl:ObjectProperty rdf:about="&ds;clinicalEvent">
+        <rdfs:label xml:lang="cs">klinická událost</rdfs:label>
+        <rdfs:label xml:lang="en">clinical event</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#contact -->
+
+    <owl:ObjectProperty rdf:about="&ds;contact">
+        <rdfs:label xml:lang="cs">kontakt</rdfs:label>
+        <rdfs:label xml:lang="en">contact</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Address"/>
+        <rdfs:range rdf:resource="&ds;Contact"/>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:domain rdf:resource="&ds;Guarantee"/>
+        <rdfs:domain rdf:resource="&ds;OriginatorDepartment"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:domain rdf:resource="&ds;RecipientDepartment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dastaVersion -->
+
+    <owl:ObjectProperty rdf:about="&ds;dastaVersion">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">verze DASTA</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA version</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta</dastaPath>
+        <dastaAttribute>verze_ds</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&dscl;V_DS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#diagCode -->
+
+    <owl:ObjectProperty rdf:about="&ds;diagCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>diagnosis code</rdfs:label>
+        <rdfs:label xml:lang="cs">kód diagnózy</rdfs:label>
+        <rdfs:label xml:lang="en">diagnosis code</rdfs:label>
+        <dastaPath>/dasta/is/ip/dg/dgz/</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>diag</dastaAttribute>
+        <rdfs:comment xml:lang="cs">U diagnózy  se uvádí údaj z aktuálního číselníku MKN10_5.
+
+V souvislosti s diagnózou existuje jejich pořadí s čísly 1--99. Přitom 1 odpovídá hlavní diagnóze a 2 je první ze zbývajících diagnóz pacienta.
+
+Pokud je sdělována jen jedna diagnóza, má pořadí = 1. Bude-li sděleno více diagnóz s pořadím = 1, nebude možné rozlišit pořadí (která je hlavní), ale vše bude zpracováno.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:range rdf:resource="&dscl;MKN10_5"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#diagnosis -->
+
+    <owl:ObjectProperty rdf:about="&ds;diagnosis">
+        <rdfs:label xml:lang="cs">diagnóza</rdfs:label>
+        <rdfs:label xml:lang="en">diagnosis</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&ds;Diagnosis"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationContent -->
+
+    <owl:ObjectProperty rdf:about="&ds;dsclExaminationContent">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>obsah</rdfs:label>
+        <rdfs:label xml:lang="cs">obsah</rdfs:label>
+        <rdfs:label xml:lang="en">obsah</rdfs:label>
+        <dastaPath>/dasta/is/ip/z</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>obsah</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&dscl;LZSOZ"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationOrigin -->
+
+    <owl:ObjectProperty rdf:about="&ds;dsclExaminationOrigin">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">vznik</rdfs:label>
+        <rdfs:label xml:lang="en">vznik</rdfs:label>
+        <dastaPath>/dasta/is/ip/z</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>vznik</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&dscl;LZTOZV"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationRequest -->
+
+    <owl:ObjectProperty rdf:about="&ds;dsclExaminationRequest">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">žádost</rdfs:label>
+        <rdfs:label xml:lang="en">request</rdfs:label>
+        <dastaPath>/dasta/is/ip/z</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>zadost</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&dscl;LZTZOV"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#dsclExaminationState -->
+
+    <owl:ObjectProperty rdf:about="&ds;dsclExaminationState">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>state</rdfs:label>
+        <rdfs:label xml:lang="cs">stav</rdfs:label>
+        <rdfs:label xml:lang="en">state</rdfs:label>
+        <dastaAttribute>stav</dastaAttribute>
+        <dastaPath>/dasta/is/ip/z</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&dscl;LZSZZ"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#fileTypeCode -->
+
+    <owl:ObjectProperty rdf:about="&ds;fileTypeCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>originator</rdfs:label>
+        <rdfs:label xml:lang="cs">typ odesilatele</rdfs:label>
+        <rdfs:label xml:lang="en">originator</rdfs:label>
+        <dastaPath>/dasta</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>typ_odesm</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&dscl;TAB_TO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#guarantee -->
+
+    <owl:ObjectProperty rdf:about="&ds;guarantee">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">garant dat</rdfs:label>
+        <rdfs:label xml:lang="en">guarantee</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Alergy"/>
+        <rdfs:domain rdf:resource="&ds;BloodGroup"/>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:range rdf:resource="&ds;Guarantee"/>
+        <rdfs:domain rdf:resource="&ds;Height"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:domain rdf:resource="&ds;PermanentMedication"/>
+        <rdfs:domain rdf:resource="&ds;RiskFactor"/>
+        <rdfs:domain rdf:resource="&ds;TetanusVaccination"/>
+        <rdfs:domain rdf:resource="&ds;UrgentData"/>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:domain rdf:resource="&ds;Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#height -->
+
+    <owl:ObjectProperty rdf:about="&ds;height">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>height</rdfs:label>
+        <rdfs:label xml:lang="cs">výška</rdfs:label>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>vyska</dastaAttribute>
+        <rdfs:comment xml:lang="cs">výška pacienta v centimetrech</rdfs:comment>
+        <rdfs:comment xml:lang="en">height in centimetres</rdfs:comment>
+        <rdfs:range rdf:resource="&ds;Height"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#informationSystem -->
+
+    <owl:ObjectProperty rdf:about="&ds;informationSystem">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">zdrojový informační systém</rdfs:label>
+        <rdfs:label xml:lang="en">source information system</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&ds;InformationSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="&ds;labAlgorithm">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>volba škály – algoritmus</rdfs:label>
+        <rdfs:label xml:lang="cs">volba škály – algoritmus</rdfs:label>
+        <rdfs:label xml:lang="en">volba škály – algoritmus</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>algoritmus</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPAVIS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labCollisionType -->
+
+    <owl:ObjectProperty rdf:about="&ds;labCollisionType">
+        <rdfs:label>typ kolize výsledku</rdfs:label>
+        <rdfs:label xml:lang="cs">typ kolize výsledku</rdfs:label>
+        <rdfs:comment>NCLPMTV</rdfs:comment>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>kolize</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPMTV"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labComponent -->
+
+    <owl:ObjectProperty rdf:about="&ds;labComponent">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>název vyšetřované komponenty</rdfs:label>
+        <rdfs:label xml:lang="cs">název vyšetřované komponenty</rdfs:label>
+        <rdfs:label xml:lang="en">název vyšetřované komponenty</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <dastaAttribute>komponenta</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPKOMP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labCorrectionFlag -->
+
+    <owl:ObjectProperty rdf:about="&ds;labCorrectionFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">indikace opravného sdělení</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>ind_oprav_sd</dastaAttribute>
+        <rdfs:comment xml:lang="cs">N = nejedná se o opravu,
+E = sděluje se opětovně, jedná se o opravu původního chybného sdělení,
+S = původní sdělení stornovat!
+U = ukončení platnosti diagnózy</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVIOSN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labEvent -->
+
+    <owl:ObjectProperty rdf:about="&ds;labEvent">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>volba škály – událost</rdfs:label>
+        <rdfs:label xml:lang="cs">volba škály – událost</rdfs:label>
+        <rdfs:label xml:lang="en">volba škály – událost</rdfs:label>
+        <dastaAttribute>udalost</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPUVIS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labFindingUrgentFlag -->
+
+    <owl:ObjectProperty rdf:about="&ds;labFindingUrgentFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>information urgency</rdfs:label>
+        <rdfs:label xml:lang="cs">urgentnost informace</rdfs:label>
+        <rdfs:label xml:lang="en">information urgency</rdfs:label>
+        <dastaAttribute>urg_info</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVUIN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labItemKey -->
+
+    <owl:ObjectProperty rdf:about="&ds;labItemKey">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">klíč sdělované položky</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:comment xml:lang="cs">Klíč z NCLPPOL</rdfs:comment>
+        <dastaAttribute>klic_nclp</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPPOL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labMaterial -->
+
+    <owl:ObjectProperty rdf:about="&ds;labMaterial">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>název materiálu primárně zaslaného</rdfs:label>
+        <rdfs:label xml:lang="cs">název materiálu primárně zaslaného</rdfs:label>
+        <rdfs:label xml:lang="en">název materiálu primárně zaslaného</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <dastaAttribute>material</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPMAT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labNumberQuantityFlag -->
+
+    <owl:ObjectProperty rdf:about="&ds;labNumberQuantityFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>příznak hodnoty kvantity</rdfs:label>
+        <rdfs:label xml:lang="cs">příznak hodnoty kvantity</rdfs:label>
+        <rdfs:label xml:lang="en">příznak hodnoty kvantity</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr/vrn</dastaPath>
+        <rdfs:comment>LVPHKN</rdfs:comment>
+        <dastaAttribute>priznak_kvant</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVPHKN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labProcedure -->
+
+    <owl:ObjectProperty rdf:about="&ds;labProcedure">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>název procedury</rdfs:label>
+        <rdfs:label xml:lang="cs">název procedury</rdfs:label>
+        <rdfs:label xml:lang="en">název procedury</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <dastaAttribute>procedura</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPPROC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labRelationshipFunctionalExamination -->
+
+    <owl:ObjectProperty rdf:about="&ds;labRelationshipFunctionalExamination">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>indikace vazby na sledování v časovém intervalu</rdfs:label>
+        <rdfs:label xml:lang="cs">indikace vazby na sledování v časovém intervalu</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>ind_vazb_fv</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVIVFVN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labResultState -->
+
+    <owl:ObjectProperty rdf:about="&ds;labResultState">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>result state</rdfs:label>
+        <rdfs:label xml:lang="cs">stav výsledku</rdfs:label>
+        <rdfs:label xml:lang="en">result state</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>stav_vys</dastaAttribute>
+        <rdfs:comment xml:lang="cs">Používá se číselník LVSVN.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVSVN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labResultType -->
+
+    <owl:ObjectProperty rdf:about="&ds;labResultType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>typ sdělení výsledku</rdfs:label>
+        <rdfs:label xml:lang="cs">typ sdělení výsledku</rdfs:label>
+        <rdfs:comment>LVTSVN</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>typ_sdel_vys</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVTSVN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScaleAttribute -->
+
+    <owl:ObjectProperty rdf:about="&ds;labScaleAttribute">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>volba škály – atributy</rdfs:label>
+        <rdfs:label xml:lang="cs">volba škály – atributy</rdfs:label>
+        <rdfs:label xml:lang="en">volba škály – atributy</rdfs:label>
+        <dastaAttribute>atribut</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVVISA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScaleType -->
+
+    <owl:ObjectProperty rdf:about="&ds;labScaleType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>volba škály – typ</rdfs:label>
+        <rdfs:label xml:lang="cs">volba škály – typ</rdfs:label>
+        <rdfs:label xml:lang="en">volba škály – typ</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>typ</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVVIST"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labSystem -->
+
+    <owl:ObjectProperty rdf:about="&ds;labSystem">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>system name</rdfs:label>
+        <rdfs:label xml:lang="cs">název systému</rdfs:label>
+        <rdfs:label xml:lang="en">system name</rdfs:label>
+        <dastaAttribute>system</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPSYST"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labUrgentProcessingFlag -->
+
+    <owl:ObjectProperty rdf:about="&ds;labUrgentProcessingFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>processing urgency</rdfs:label>
+        <rdfs:label xml:lang="cs">urgentnost zpracování</rdfs:label>
+        <rdfs:label xml:lang="en">processing urgency</rdfs:label>
+        <rdfs:seeAlso>LVUZN</rdfs:seeAlso>
+        <dastaAttribute>urg_zprac</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;LVUZN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labValueFormatType -->
+
+    <owl:ObjectProperty rdf:about="&ds;labValueFormatType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>value format</rdfs:label>
+        <rdfs:label xml:lang="cs">formát hodnoty</rdfs:label>
+        <rdfs:label xml:lang="en">value format</rdfs:label>
+        <rdfs:comment xml:lang="cs">Pracuje se s hodnotou položky ”formát hodnoty” definované ke sdělované položce  (dle pravidel NČLP a DS). Používá se číselník NCLPFH.</rdfs:comment>
+        <dastaAttribute>typpol_fh</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPFH"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labValueKind -->
+
+    <owl:ObjectProperty rdf:about="&ds;labValueKind">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>druh veličiny</rdfs:label>
+        <rdfs:label xml:lang="cs">druh veličiny</rdfs:label>
+        <rdfs:label xml:lang="en">druh veličiny</rdfs:label>
+        <dastaAttribute>druh_veliciny</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&dscl;NCLPDRVL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#nclpVersion -->
+
+    <owl:ObjectProperty rdf:about="&ds;nclpVersion">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">verze NČLP</rdfs:label>
+        <rdfs:label xml:lang="en">NCLP code-list version</rdfs:label>
+        <dastaPath>/dasta</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>verze_nclp</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&dscl;V_NCLP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#originator -->
+
+    <owl:ObjectProperty rdf:about="&ds;originator">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">odesílatel</rdfs:label>
+        <rdfs:label xml:lang="en">originator</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&ds;OriginatorDepartment"/>
+        <owl:propertyDisjointWith rdf:resource="&ds;recipient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#patient -->
+
+    <owl:ObjectProperty rdf:about="&ds;patient">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">pacient</rdfs:label>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:domain rdf:resource="&ds;Height"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&ds;Patient"/>
+        <rdfs:domain rdf:resource="&ds;Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#recipient -->
+
+    <owl:ObjectProperty rdf:about="&ds;recipient">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:range rdf:resource="&ds;RecipientDepartment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#reportSITS -->
+
+    <owl:ObjectProperty rdf:about="&ds;reportSITS">
+        <rdfs:label>SITS report</rdfs:label>
+        <rdfs:label xml:lang="cs">SITS zpráva</rdfs:label>
+        <rdfs:label xml:lang="en">SITS report</rdfs:label>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&sits;SITSReport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#sexNCLPTPS -->
+
+    <owl:ObjectProperty rdf:about="&ds;sexNCLPTPS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>sex</rdfs:label>
+        <rdfs:label xml:lang="cs">pohlaví</rdfs:label>
+        <rdfs:label xml:lang="en">sex</rdfs:label>
+        <dastaAttribute>sex</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&dscl;NCLPTPS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#sexPOHLAV -->
+
+    <owl:ObjectProperty rdf:about="&ds;sexPOHLAV">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">pohlaví</rdfs:label>
+        <rdfs:label>sex</rdfs:label>
+        <rdfs:label xml:lang="en">sex</rdfs:label>
+        <dastaAttribute>sex</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&dscl;POHLAV"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#specialism -->
+
+    <owl:ObjectProperty rdf:about="&ds;specialism">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">odbornost</rdfs:label>
+        <rdfs:label xml:lang="en">specialism</rdfs:label>
+        <dastaAttribute>odbornost</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Guarantee"/>
+        <rdfs:range rdf:resource="&dscl;ODBORN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#urgentData -->
+
+    <owl:ObjectProperty rdf:about="&ds;urgentData">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">urgentní data</rdfs:label>
+        <rdfs:label xml:lang="en">urgent data</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&ds;RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#weight -->
+
+    <owl:ObjectProperty rdf:about="&ds;weight">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">hmotnost</rdfs:label>
+        <rdfs:label>weight</rdfs:label>
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+        <dastaAttribute>hmotnost</dastaAttribute>
+        <rdfs:comment xml:lang="en">hmotnost pacienta v kilogramech jako desetinné číslo</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&ds;Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#addressCity -->
+
+    <owl:DatatypeProperty rdf:about="&ds;addressCity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">obec/město</rdfs:label>
+        <rdfs:label xml:lang="en">city</rdfs:label>
+        <dastaPath>/dasta/is/ip/a/</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>mesto</dastaElement>
+        <rdfs:domain rdf:resource="&ds;Address"/>
+        <rdfs:domain rdf:resource="&ds;PermanentAddress"/>
+        <rdfs:domain rdf:resource="&ds;TemporaryAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#addressCityPart -->
+
+    <owl:DatatypeProperty rdf:about="&ds;addressCityPart">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">část obce</rdfs:label>
+        <rdfs:label xml:lang="en">city part (address)</rdfs:label>
+        <dastaElement>dop1</dastaElement>
+        <dastaPath>/dasta/is/ip/a/</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Address"/>
+        <rdfs:domain rdf:resource="&ds;PermanentAddress"/>
+        <rdfs:domain rdf:resource="&ds;TemporaryAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#addressZIP -->
+
+    <owl:DatatypeProperty rdf:about="&ds;addressZIP">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>ZIP</rdfs:label>
+        <rdfs:label xml:lang="cs">PSČ</rdfs:label>
+        <rdfs:label xml:lang="en">ZIP</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/a/</dastaPath>
+        <dastaElement>psc</dastaElement>
+        <rdfs:domain rdf:resource="&ds;Address"/>
+        <rdfs:domain rdf:resource="&ds;PermanentAddress"/>
+        <rdfs:domain rdf:resource="&ds;TemporaryAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#applicationCodeName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;applicationCodeName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">kód programu</rdfs:label>
+        <rdfs:label xml:lang="en">application code</rdfs:label>
+        <dastaPath>/dasta/zdroj_is</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>kod_prog</dastaAttribute>
+        <rdfs:comment xml:lang="cs">Kód programu, kterým byl  soubor vytvořen.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;InformationSystem"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#applicationLicenseNumber -->
+
+    <owl:DatatypeProperty rdf:about="&ds;applicationLicenseNumber">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">licenční číslo programu</rdfs:label>
+        <rdfs:label xml:lang="en">application license code</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>liccis_prog</dastaAttribute>
+        <dastaPath>/dasta/zdroj_is</dastaPath>
+        <rdfs:comment xml:lang="cs">Licenční číslo programu, kterým byl soubor vytvořen.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;InformationSystem"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#applicationVersion -->
+
+    <owl:DatatypeProperty rdf:about="&ds;applicationVersion">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">verze programu</rdfs:label>
+        <rdfs:label xml:lang="en">application version</rdfs:label>
+        <dastaPath>/dasta/zdroj_is</dastaPath>
+        <rdfs:comment xml:lang="cs">Verze programu, kterým je  soubor vytvořen.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>verze_prog</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;InformationSystem"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#containsBinaryAttachment -->
+
+    <owl:DatatypeProperty rdf:about="&ds;containsBinaryAttachment">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">má binární přílohu</rdfs:label>
+        <rdfs:label xml:lang="en">has binary attachment</rdfs:label>
+        <dastaAttribute>bin_priloha</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta</dastaPath>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeBirth -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeBirth">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">datum narození</rdfs:label>
+        <rdfs:label xml:lang="en">birth date</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>dat_dn</dastaAttribute>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockCreated -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeBlockCreated">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">datum a čas vytvoření</rdfs:label>
+        <rdfs:label xml:lang="en">created date</rdfs:label>
+        <dastaPath>/dasta</dastaPath>
+        <dastaAttribute>dat_vb</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeBlockLastUpdate -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeBlockLastUpdate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">datum a čas aktualizace</rdfs:label>
+        <rdfs:label>last updated</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>dat_ab</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;Height"/>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:domain rdf:resource="&ds;Weight"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeDeath -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeDeath">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">datum a čas úmrtí</rdfs:label>
+        <rdfs:label xml:lang="en">death date</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>dat_de</dastaAttribute>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeEvent -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeEvent">
+        <dastaAttribute>dat_du</dastaAttribute>
+        <dastaElement>dat_du</dastaElement>
+        <dastaPath>/dasta/is/ip/dg/dgz/</dastaPath>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaPath>/dasta/is/ip/z</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Anamnesis"/>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="cs">datum a čas události</rdfs:label>
+        <rdfs:label xml:lang="en">event date and time</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:DatatypeProperty>
+
+    
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#datetimeNextPlannedVaccination -->
+
+    <owl:DatatypeProperty rdf:about="&ds;datetimeNextPlannedVaccination">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">datum příštího plánovaného očkování</rdfs:label>
+        <rdfs:label xml:lang="en">next planned vaccination date</rdfs:label>
+        <dastaAttribute>dat_po</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#departmentName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;departmentName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">název</rdfs:label>
+        <rdfs:label xml:lang="en">název</rdfs:label>
+        <dastaAttribute>jmeno</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaPath>/dasta/is</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:domain rdf:resource="&ds;OriginatorDepartment"/>
+        <rdfs:domain rdf:resource="&ds;RecipientDepartment"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#diagDetail -->
+
+    <owl:DatatypeProperty rdf:about="&ds;diagDetail">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">specifikace diagnózy</rdfs:label>
+        <rdfs:label xml:lang="en">diag specification</rdfs:label>
+        <dastaElement>spec_dg</dastaElement>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/dg/dgz/</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#diagOrder -->
+
+    <owl:DatatypeProperty rdf:about="&ds;diagOrder">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">pořadí diagnózy</rdfs:label>
+        <rdfs:label xml:lang="en">diagnosis order</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>poradi</dastaAttribute>
+        <dastaPath>/dasta/is/ip/dg/dgz/</dastaPath>
+        <rdfs:comment xml:lang="cs">pořadí diagnózy</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Diagnosis"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#fileCode -->
+
+    <owl:DatatypeProperty rdf:about="&ds;fileCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">doplňující označení odesílaného souboru</rdfs:label>
+        <rdfs:label xml:lang="en">additional transfered file label</rdfs:label>
+        <dastaPath>/dasta</dastaPath>
+        <dastaAttribute>ozn_soub</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#fileId -->
+
+    <owl:DatatypeProperty rdf:about="&ds;fileId">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikace DASTA souboru</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA file identificator</rdfs:label>
+        <dastaPath>/dasta</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>id_soubor</dastaAttribute>
+        <rdfs:comment xml:lang="cs">jednoznačná vnitřní identifikace souboru v rámci firmy a jejího programu nebo informačního systému.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#firstName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;firstName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">jméno</rdfs:label>
+        <rdfs:label xml:lang="en">jmeno</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>jmeno</dastaElement>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#heightValue -->
+
+    <owl:DatatypeProperty rdf:about="&ds;heightValue">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>height value</rdfs:label>
+        <rdfs:label xml:lang="cs">výška</rdfs:label>
+        <rdfs:label xml:lang="en">height value</rdfs:label>
+        <rdfs:comment xml:lang="en">height in centimetres</rdfs:comment>
+        <dastaAttribute>vyska</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">výška pacienta v centimetrech</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Height"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#icl -->
+
+    <owl:DatatypeProperty rdf:about="&ds;icl">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikační číslo lékaře příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient medical doctor identificator</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>icl</dastaAttribute>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaPath>/dasta/is</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#ico -->
+
+    <owl:DatatypeProperty rdf:about="&ds;ico">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikace právního subjektu ZZ příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">business ZZ identificator</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaPath>/dasta/is</dastaPath>
+        <dastaAttribute>ico</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#icp -->
+
+    <owl:DatatypeProperty rdf:about="&ds;icp">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikační číslo pracoviště příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient department identificator</rdfs:label>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaPath>/dasta/is</dastaPath>
+        <dastaAttribute>icp</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#icz -->
+
+    <owl:DatatypeProperty rdf:about="&ds;icz">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikační číslo ZZ pracoviště příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient ZZ department identificator</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaPath>/dasta/is</dastaPath>
+        <dastaAttribute>icz</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#imagingStudyNumber -->
+
+    <owl:DatatypeProperty rdf:about="&ds;imagingStudyNumber">
+        <rdfs:label>imaging study number</rdfs:label>
+        <rdfs:label xml:lang="cs">číslo obrazové studie</rdfs:label>
+        <dastaAttribute>oznaceni_o</dastaAttribute>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labBlockId -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labBlockId">
+        <dastaAttribute>id_lo_is</dastaAttribute>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labConfidental -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labConfidental">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>confidental</rdfs:label>
+        <rdfs:label xml:lang="cs">důvěrná informace</rdfs:label>
+        <rdfs:label xml:lang="en">confidental</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>duverne</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labItemLocalOrNationalFlag -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labItemLocalOrNationalFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>national or local</rdfs:label>
+        <rdfs:label xml:lang="cs">národní nebo lokální</rdfs:label>
+        <rdfs:label xml:lang="en">national or local</rdfs:label>
+        <dastaAttribute>typ_cispol</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Určení, zda se jedná o sdílenou národní, nebo o místně doplněnou lokální položku.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labLocalName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labLocalName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>local LCLP name</rdfs:label>
+        <rdfs:label xml:lang="cs">lokální název v LČLP</rdfs:label>
+        <rdfs:label xml:lang="en">local LCLP name</rdfs:label>
+        <rdfs:comment>LCLPPOL</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <dastaAttribute>nazev_lclp</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labNumberValue -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labNumberValue">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>value</rdfs:label>
+        <rdfs:label xml:lang="cs">hodnota</rdfs:label>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <dastaAttribute>hodnota</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr/vrn</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale1 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale1">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 1 (mez dolní)</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>s1</dastaElement>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale2 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale2">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 2</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <dastaElement>s2</dastaElement>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale3 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale3">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 3</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <dastaElement>s3</dastaElement>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale4 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale4">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 4 (referenční mez dolní) </rdfs:label>
+        <dastaElement>s4</dastaElement>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale5 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale5">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 5 (referenční mez horní)</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>s5</dastaElement>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale6 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale6">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 6</rdfs:label>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>s6</dastaElement>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale7 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale7">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 7</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>s7</dastaElement>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labScale8 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labScale8">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">škála 8 (mez horní)</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/skala</dastaPath>
+        <dastaElement>s8</dastaElement>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labTextForPatient -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labTextForPatient">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>text for a patient</rdfs:label>
+        <rdfs:label xml:lang="cs">text pro pacienta</rdfs:label>
+        <rdfs:label xml:lang="en">text for a patient</rdfs:label>
+        <dastaAttribute>pp</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#labValueUnit -->
+
+    <owl:DatatypeProperty rdf:about="&ds;labValueUnit">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>jednotka</rdfs:label>
+        <rdfs:label xml:lang="cs">jednotka</rdfs:label>
+        <rdfs:label xml:lang="en">jednotka</rdfs:label>
+        <dastaAttribute>jednotka</dastaAttribute>
+        <dastaPath>/dasta/is/ip/v/vr/vrn/nazvy</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">jednotka, ve které je uvedena sdělovaná hodnota (vlastní výsledek)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#lastName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;lastName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">příjmení</rdfs:label>
+        <rdfs:label xml:lang="en">last name</rdfs:label>
+        <dastaElement>prijmeni</dastaElement>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#maidenName -->
+
+    <owl:DatatypeProperty rdf:about="&ds;maidenName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">rodné příjmení</rdfs:label>
+        <rdfs:label xml:lang="en">family name</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>rod_prijm</dastaElement>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:comment xml:lang="en">Family or maiden name.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#note -->
+
+    <owl:DatatypeProperty rdf:about="&ds;note">
+        <rdfs:label xml:lang="cs">poznámka</rdfs:label>
+        <rdfs:label xml:lang="en">note</rdfs:label>
+        <dastaAttribute>note</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">poznámka, jiné doplňující údaje</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:domain rdf:resource="&ds;LaboratoryReport"/>
+        <rdfs:domain rdf:resource="&ds;MedicalExamination"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#patientID -->
+
+    <owl:DatatypeProperty rdf:about="&ds;patientID">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">identifikace pacienta</rdfs:label>
+        <rdfs:label xml:lang="en">id_pac</rdfs:label>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <dastaElement>id_pac</dastaElement>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#patientID2 -->
+
+    <owl:DatatypeProperty rdf:about="&ds;patientID2">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">jiné identifikační údaje</rdfs:label>
+        <rdfs:label xml:lang="en">other identificator</rdfs:label>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <dastaAttribute>jine_idu</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#pcz -->
+
+    <owl:DatatypeProperty rdf:about="&ds;pcz">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>recipient ZZ department sequential number</rdfs:label>
+        <rdfs:label xml:lang="cs">pořadové číslo ZZ pracoviště příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient ZZ department sequential number</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta/is</dastaPath>
+        <dastaPath>/dasta/pm</dastaPath>
+        <dastaAttribute>pcz</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;Department"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#recipientDepartmentSection -->
+
+    <owl:DatatypeProperty rdf:about="&ds;recipientDepartmentSection">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">oddělení příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">recipient department</rdfs:label>
+        <dastaAttribute>oddel</dastaAttribute>
+        <dastaPath>dasta/is</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;RecipientDepartment"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#reportText -->
+
+    <owl:DatatypeProperty rdf:about="&ds;reportText">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">text zprávy</rdfs:label>
+        <rdfs:label xml:lang="en">report text</rdfs:label>
+        <dastaElement>ptext</dastaElement>
+        <dastaPath>/dasta/is/ip/z/text/</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Anamnesis"/>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#reportTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ds;reportTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">název zprávy</rdfs:label>
+        <rdfs:label xml:lang="en">report title</rdfs:label>
+        <dastaPath>/dasta/is/ip/z/</dastaPath>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>nazev</dastaElement>
+        <rdfs:domain rdf:resource="&ds;Anamnesis"/>
+        <rdfs:domain rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#sex -->
+
+    <owl:DatatypeProperty rdf:about="&ds;sex">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">pohlaví</rdfs:label>
+        <rdfs:label>sex</rdfs:label>
+        <rdfs:label xml:lang="en">sex</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>sex</dastaElement>
+        <dastaPath>/dasta/is/ip/</dastaPath>
+        <rdfs:comment xml:lang="cs">seznam hodnot: M = muži, F = ženy, X = blíže neurčeno</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Female"/>
+        <rdfs:domain rdf:resource="&ds;Male"/>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#titleAfter -->
+
+    <owl:DatatypeProperty rdf:about="&ds;titleAfter">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">titul za jménem</rdfs:label>
+        <rdfs:label xml:lang="en">degree (after name)</rdfs:label>
+        <dastaElement>titul_za</dastaElement>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#titleBefore -->
+
+    <owl:DatatypeProperty rdf:about="&ds;titleBefore">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">titul před jménem</rdfs:label>
+        <rdfs:label xml:lang="en">degree (before name)</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaElement>titul_pred</dastaElement>
+        <rdfs:domain rdf:resource="&ds;Patient"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#urgentFlag -->
+
+    <owl:DatatypeProperty rdf:about="&ds;urgentFlag">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">typ dat, urgentnost</rdfs:label>
+        <rdfs:label xml:lang="en">data type/urgent</rdfs:label>
+        <dastaAttribute>ur</dastaAttribute>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaPath>/dasta</dastaPath>
+        <rdfs:comment xml:lang="cs">určení; typ přenášených dat (v případě pacientských dat též urgentnost sdělení nebo zpracování souboru)</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;DASTA"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#vaccinationDose -->
+
+    <owl:DatatypeProperty rdf:about="&ds;vaccinationDose">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:label xml:lang="cs">očkovací dávka</rdfs:label>
+        <rdfs:label xml:lang="en">dose</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>davka</dastaAttribute>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#vaccinationTypeCode -->
+
+    <owl:DatatypeProperty rdf:about="&ds;vaccinationTypeCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:label xml:lang="cs">kód typu očkování</rdfs:label>
+        <rdfs:label xml:lang="en">vaccination code of type</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <dastaAttribute>typ_oc_kod</dastaAttribute>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#vaccinationTypeTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ds;vaccinationTypeTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">typ očkování</rdfs:label>
+        <rdfs:label xml:lang="en">vaccination type</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>typ_oc_text</dastaAttribute>
+        <rdfs:domain rdf:resource="&ds;Vaccination"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#weightValue -->
+
+    <owl:DatatypeProperty rdf:about="&ds;weightValue">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="cs">hmotnost</rdfs:label>
+        <rdfs:label>weight value</rdfs:label>
+        <rdfs:label xml:lang="en">weight</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <dastaAttribute>hmotnost</dastaAttribute>
+        <rdfs:comment xml:lang="en">hmotnost pacienta v kilogramech jako desetinné číslo</rdfs:comment>
+        <rdfs:domain rdf:resource="&ds;Weight"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#ActualDiagnosis -->
+
+    <owl:Class rdf:about="&ds;ActualDiagnosis">
+        <rdfs:label>Actual diagnosis</rdfs:label>
+        <rdfs:label xml:lang="cs">Aktuální diagnóza</rdfs:label>
+        <rdfs:label xml:lang="en">Actual diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;Diagnosis"/>
+        <rdfs:comment xml:lang="cs">Aktuální nebo-li přechodná diagnóza.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Address -->
+
+    <owl:Class rdf:about="&ds;Address">
+        <rdfs:label>Address</rdfs:label>
+        <rdfs:label xml:lang="cs">Adresa</rdfs:label>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+        <owl:equivalentClass rdf:resource="&dscl;TAB_TA"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Adresy vázané k odesílateli, příjemci, pacientovi i pro různé další účely - je využíváno ve více blocích.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Alergy -->
+
+    <owl:Class rdf:about="&ds;Alergy">
+        <rdfs:label xml:lang="cs">Alergie</rdfs:label>
+        <rdfs:label>Alergy</rdfs:label>
+        <rdfs:label xml:lang="en">Alergy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;UrgentData"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Anamnesis -->
+
+    <owl:Class rdf:about="&ds;Anamnesis">
+        <rdfs:label>Anamnesis</rdfs:label>
+        <rdfs:label xml:lang="cs">Anamnéza</rdfs:label>
+        <rdfs:label xml:lang="en">Anamnesis</rdfs:label>
+        <rdfs:comment xml:lang="cs">Souhrnná anamnéza společná pro všechny obory medicíny.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#BloodGroup -->
+
+    <owl:Class rdf:about="&ds;BloodGroup">
+        <rdfs:label>Blood group</rdfs:label>
+        <rdfs:label xml:lang="cs">Krevní skupina</rdfs:label>
+        <rdfs:label xml:lang="en">Blood group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;UrgentData"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#CODE_LIST_CLASS -->
+
+    <owl:Class rdf:about="&ds;CODE_LIST_CLASS">
+        <rdfs:label>Code-lists</rdfs:label>
+        <rdfs:label xml:lang="cs">Číselníky</rdfs:label>
+        <rdfs:label xml:lang="en">Code-lists</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#ClinicalEvent -->
+
+    <owl:Class rdf:about="&ds;ClinicalEvent">
+        <rdfs:label>Clinical event</rdfs:label>
+        <rdfs:label xml:lang="cs">Klinická událost</rdfs:label>
+        <rdfs:label xml:lang="en">Clinical event</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Contact -->
+
+    <owl:Class rdf:about="&ds;Contact">
+        <rdfs:label>Contact</rdfs:label>
+        <rdfs:label xml:lang="cs">Kontakt</rdfs:label>
+        <rdfs:label xml:lang="en">Contact</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Adresa spojení doplňující blok adres.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#DASTA -->
+
+    <owl:Class rdf:about="&ds;DASTA">
+        <rdfs:label xml:lang="cs">DASTA soubor</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA file</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&nfo;FileDataObject"/>
+        <rdfs:comment xml:lang="cs">Hlavní blok. Kořen grafu. Varianta pro DS4.
+Váže se k celému odesílanému souboru všech odesílatelů určenému pro jednoho příjemce.
+
+Jedná se o jednoznačný identifikátor souboru.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;fileTypeCode"/>
+            <rdf:Description rdf:about="&ds;fileCode"/>
+            <rdf:Description rdf:about="&ds;urgentFlag"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;fileId"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#DASTA_CODE_LIST_CLASS -->
+
+    <owl:Class rdf:about="&ds;DASTA_CODE_LIST_CLASS">
+        <rdfs:label>DASTA Code-List</rdfs:label>
+        <rdfs:label xml:lang="cs">Číselník DASTA</rdfs:label>
+        <rdfs:label xml:lang="en">DASTA Code-List</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;CODE_LIST_CLASS"/>
+        <rdfs:comment xml:lang="cs">Číselník DASTA - Datový standard Ministerstva zdravotnictví České republiky</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Department -->
+
+    <owl:Class rdf:about="&ds;Department">
+        <rdfs:label>Department</rdfs:label>
+        <rdfs:label xml:lang="cs">Pracoviště</rdfs:label>
+        <rdfs:label xml:lang="en">Department</rdfs:label>
+        <rdfs:comment xml:lang="cs">Informace o žadateli nebo odesílateli. Dále může být příjemcem nebo odesílatelem dat.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;icp"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;icz"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;ico"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;icl"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;pcz"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Diagnosis -->
+
+    <owl:Class rdf:about="&ds;Diagnosis">
+        <rdfs:label>Diagnosis</rdfs:label>
+        <rdfs:label xml:lang="cs">Diagnóza</rdfs:label>
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;datetimeEvent"/>
+            <rdf:Description rdf:about="&ds;diagDetail"/>
+            <rdf:Description rdf:about="&ds;diagOrder"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Female -->
+
+    <owl:Class rdf:about="&ds;Female">
+        <rdfs:label>Female</rdfs:label>
+        <rdfs:label xml:lang="cs">Žena</rdfs:label>
+        <rdfs:label xml:lang="en">Female</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ds;Patient"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sexNCLPTPS"/>
+                                <owl:hasValue rdf:resource="&ds;NCLPTPS_F"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sexPOHLAV"/>
+                                <owl:hasValue rdf:resource="&ds;POHLAV_2"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sex"/>
+                                <owl:hasValue>F</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sex"/>
+                                <owl:hasValue>f</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Guarantee -->
+
+    <owl:Class rdf:about="&ds;Guarantee">
+        <rdfs:label>Data guarantee</rdfs:label>
+        <rdfs:label xml:lang="cs">Garant dat</rdfs:label>
+        <rdfs:label xml:lang="en">Data guarantee</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Garant ručící za kvalitu bloku odesílaných dat. 
+Pracovník, který je garantem posílaných dat při domluvené kontrolované komunikaci. Data jsou příjemcem akceptována jen při uvedení očekávané osoby z množiny příjemcem očekávaných osob. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Height -->
+
+    <owl:Class rdf:about="&ds;Height">
+        <rdfs:label>Height</rdfs:label>
+        <rdfs:label xml:lang="cs">Výška</rdfs:label>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
+        <rdfs:comment xml:lang="cs">Běžná standardní výška pacienta v centimetrech.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;patient"/>
+            <rdf:Description rdf:about="&ds;datetimeBlockLastUpdate"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#InformationSystem -->
+
+    <owl:Class rdf:about="&ds;InformationSystem">
+        <rdfs:label>Information system</rdfs:label>
+        <rdfs:label xml:lang="cs">Informační systém</rdfs:label>
+        <rdfs:label xml:lang="en">Information system</rdfs:label>
+        <owl:backwardCompatibleWith>DS020101</owl:backwardCompatibleWith>
+        <rdfs:comment xml:lang="cs">Zdroj, ze kterého pochází používaný informační systém nebo program. Jednoznačné určení firmy, programu a jeho verze (nebo licenčního čísla).</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;applicationCompanyName"/>
+            <rdf:Description rdf:about="&ds;applicationCodeName"/>
+            <rdf:Description rdf:about="&ds;applicationLicenseNumber"/>
+            <rdf:Description rdf:about="&ds;applicationVersion"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#LaboratoryReport -->
+
+    <owl:Class rdf:about="&ds;LaboratoryReport">
+        <rdfs:label xml:lang="cs">Laboratorní vyšetření</rdfs:label>
+        <rdfs:label>Laboratory report</rdfs:label>
+        <rdfs:label xml:lang="en">Laboratory report</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Sdělované laboratorní vyšetření pacienta vázané k jedné klinické události.</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;datetimeEvent"/>
+            <rdf:Description rdf:about="&ds;labAlgorithm"/>
+            <rdf:Description rdf:about="&ds;labComponent"/>
+            <rdf:Description rdf:about="&ds;labItemKey"/>
+            <rdf:Description rdf:about="&ds;labMaterial"/>
+            <rdf:Description rdf:about="&ds;labProcedure"/>
+            <rdf:Description rdf:about="&ds;labScaleAttribute"/>
+            <rdf:Description rdf:about="&ds;labSystem"/>
+            <rdf:Description rdf:about="&ds;labValueKind"/>
+            <rdf:Description rdf:about="&ds;labLocalName"/>
+            <rdf:Description rdf:about="&ds;labNumberValue"/>
+            <rdf:Description rdf:about="&ds;labTextForPatient"/>
+            <rdf:Description rdf:about="&ds;labValueUnit"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Male -->
+
+    <owl:Class rdf:about="&ds;Male">
+        <rdfs:label>Male</rdfs:label>
+        <rdfs:label xml:lang="cs">Muž</rdfs:label>
+        <rdfs:label xml:lang="en">Male</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ds;Patient"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sexNCLPTPS"/>
+                                <owl:hasValue rdf:resource="&ds;NCLPTPS_M"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sexPOHLAV"/>
+                                <owl:hasValue rdf:resource="&ds;POHLAV_1"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sex"/>
+                                <owl:hasValue>M</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&ds;sex"/>
+                                <owl:hasValue>m</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#MedicalExamination -->
+
+    <owl:Class rdf:about="&ds;MedicalExamination">
+        <rdfs:label>Medical examination</rdfs:label>
+        <rdfs:label xml:lang="cs">Lékařská zpráva</rdfs:label>
+        <rdfs:label xml:lang="en">Medical examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;ClinicalEvent"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Sdělování výsledků vyšetření pacienta a zpráv o pacientovi.</rdfs:comment>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;datetimeEvent"/>
+            <rdf:Description rdf:about="&ds;patient"/>
+            <rdf:Description rdf:about="&ds;reportText"/>
+            <rdf:Description rdf:about="&ds;reportTitle"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#NCLP_CODE_LIST_CLASS -->
+
+    <owl:Class rdf:about="&ds;NCLP_CODE_LIST_CLASS">
+        <rdfs:label>NCLP Code-list</rdfs:label>
+        <rdfs:label xml:lang="cs">Národní číselník laboratorních položek</rdfs:label>
+        <rdfs:label xml:lang="en">NCLP Code-list</rdfs:label>
+        <rdfs:label xml:lang="en">National laboratory items code-list of the Health Ministery of the Czech Republic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;CODE_LIST_CLASS"/>
+        <rdfs:comment xml:lang="cs">Národní číselník laboratorních položek Ministerstva zdravotnictví České republiky</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#OriginatorDepartment -->
+
+    <owl:Class rdf:about="&ds;OriginatorDepartment">
+        <rdfs:label>Originator</rdfs:label>
+        <rdfs:label xml:lang="cs">Odesílatel</rdfs:label>
+        <rdfs:label xml:lang="en">Originator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;Department"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Základní informace o odesílateli (jednom z odesílatelů) zasílaného souboru a data pacienta nebo pacientů.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Patient -->
+
+    <owl:Class rdf:about="&ds;Patient">
+        <rdfs:label>Patient</rdfs:label>
+        <rdfs:label xml:lang="cs">Pacient</rdfs:label>
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+        <rdfs:comment xml:lang="cs">Základní blok nesoucí data vztažená pouze k jednomu pacientovi.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;patientID"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;patientID2"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#PermanentAddress -->
+
+    <owl:Class rdf:about="&ds;PermanentAddress">
+        <rdfs:label xml:lang="cs">Trvalé bydliště</rdfs:label>
+        <rdfs:label xml:lang="en">Permanent address</rdfs:label>
+        <owl:equivalentClass rdf:resource="&dscl;TAB_TA_1"/>
+        <rdfs:subClassOf rdf:resource="&ds;Address"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#PermanentDiagnosis -->
+
+    <owl:Class rdf:about="&ds;PermanentDiagnosis">
+        <rdfs:label>Permanent diagnosis</rdfs:label>
+        <rdfs:label xml:lang="cs">Trvalá diagnóza</rdfs:label>
+        <rdfs:label xml:lang="en">Permanent diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;Diagnosis"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#PermanentMedication -->
+
+    <owl:Class rdf:about="&ds;PermanentMedication">
+        <rdfs:label>Permanent medication</rdfs:label>
+        <rdfs:label xml:lang="cs">Trvalá medikace</rdfs:label>
+        <rdfs:label xml:lang="en">Permanent medication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;UrgentData"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#RecipientDepartment -->
+
+    <owl:Class rdf:about="&ds;RecipientDepartment">
+        <rdfs:label xml:lang="cs">Příjemce</rdfs:label>
+        <rdfs:label xml:lang="en">Recipent</rdfs:label>
+        <rdfs:label>Recipient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;Department"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Příjmové místo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#RiskFactor -->
+
+    <owl:Class rdf:about="&ds;RiskFactor">
+        <rdfs:label>Risc factor</rdfs:label>
+        <rdfs:label xml:lang="cs">Rizikový faktor</rdfs:label>
+        <rdfs:label xml:lang="en">Risc factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;UrgentData"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#TemporaryAddress -->
+
+    <owl:Class rdf:about="&ds;TemporaryAddress">
+        <rdfs:label xml:lang="cs">Přechodná adresa</rdfs:label>
+        <rdfs:label xml:lang="en">Temporary address</rdfs:label>
+        <owl:equivalentClass rdf:resource="&dscl;TAB_TA_2"/>
+        <rdfs:subClassOf rdf:resource="&ds;Address"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#TetanusVaccination -->
+
+    <owl:Class rdf:about="&ds;TetanusVaccination">
+        <rdfs:label>Tetanus vaccination</rdfs:label>
+        <rdfs:label xml:lang="cs">Očkování proti tetanu</rdfs:label>
+        <rdfs:label xml:lang="en">Tetanus vaccination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;UrgentData"/>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#UZIS_CODE_LIST_CLASS -->
+
+    <owl:Class rdf:about="&ds;UZIS_CODE_LIST_CLASS">
+        <rdfs:label>UZIS Code-List</rdfs:label>
+        <rdfs:label xml:lang="cs">Národní zdravotnický informační systém</rdfs:label>
+        <rdfs:label xml:lang="en">UZIS Code-List</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;CODE_LIST_CLASS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#UrgentData -->
+
+    <owl:Class rdf:about="&ds;UrgentData">
+        <rdfs:label>Urgent information</rdfs:label>
+        <rdfs:label xml:lang="cs">Urgentní informace</rdfs:label>
+        <rdfs:label xml:lang="en">Urgent information</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="cs">Urgentní informace o pacientovi.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#VZP_CODE_LIST_CLASS -->
+
+    <owl:Class rdf:about="&ds;VZP_CODE_LIST_CLASS">
+        <rdfs:label>VZP Code-List</rdfs:label>
+        <rdfs:label xml:lang="cs">Číselník VZP</rdfs:label>
+        <rdfs:label xml:lang="en">VZP Code-List</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ds;CODE_LIST_CLASS"/>
+        <rdfs:comment xml:lang="cs">Nejsou součástí DS, číselníky distribuuje VZP</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Vaccination -->
+
+    <owl:Class rdf:about="&ds;Vaccination">
+        <rdfs:label xml:lang="cs">Očkování</rdfs:label>
+        <rdfs:label xml:lang="en">Vaccination</rdfs:label>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;vaccinationTypeCode"/>
+            <rdf:Description rdf:about="&ds;datetimeBlockLastUpdate"/>
+            <rdf:Description rdf:about="&ds;datetimeNextPlannedVaccination"/>
+            <rdf:Description rdf:about="&ds;vaccinationTypeTitle"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#Weight -->
+
+    <owl:Class rdf:about="&ds;Weight">
+        <rdfs:label>Weight</rdfs:label>
+        <rdfs:label xml:lang="cs">Hmotnost</rdfs:label>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+        <rdfs:comment xml:lang="cs">Hmotnost pacienta v kilogramech.</rdfs:comment>
+        <rdfs:isDefinedBy>http://mre.zcu.cz/ontology/dasta.owl</rdfs:isDefinedBy>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;patient"/>
+            <rdf:Description rdf:about="&ds;datetimeBlockLastUpdate"/>
+            <rdf:Description rdf:about="&ds;weightValue"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dicom.owl#Study -->
+
+    <owl:Class rdf:about="&dcm;Study"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dscl.owl#ODBORN -->
+
+    <owl:Class rdf:about="&dscl;ODBORN"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dscl.owl#TAB_TA -->
+
+    <owl:Class rdf:about="&dscl;TABTA"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dscl.owl#TAB_TA_1 -->
+
+    <owl:Class rdf:about="&dscl;TABTA_1"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dscl.owl#TAB_TA_2 -->
+
+    <owl:Class rdf:about="&dscl;TABTA_2"/>
+    
+
+
+    <!-- http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#FileDataObject -->
+
+    <owl:Class rdf:about="&nfo;FileDataObject"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#datetime -->
+
+    <owl:Class rdf:about="&xsd;datetime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#NCLPTPS_F -->
+
+    <owl:NamedIndividual rdf:about="&ds;NCLPTPS_F"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#NCLPTPS_M -->
+
+    <owl:NamedIndividual rdf:about="&ds;NCLPTPS_M"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#POHLAV_1 -->
+
+    <owl:NamedIndividual rdf:about="&ds;POHLAV_1"/>
+    
+
+
+    <!-- http://mre.zcu.cz/ontology/dasta.owl#POHLAV_2 -->
+
+    <owl:NamedIndividual rdf:about="&ds;POHLAV_2"/>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ds;labScale1"/>
+            <rdf:Description rdf:about="&ds;labScale2"/>
+            <rdf:Description rdf:about="&ds;labScale3"/>
+            <rdf:Description rdf:about="&ds;labScale4"/>
+            <rdf:Description rdf:about="&ds;labScale5"/>
+            <rdf:Description rdf:about="&ds;labScale6"/>
+            <rdf:Description rdf:about="&ds;labScale7"/>
+            <rdf:Description rdf:about="&ds;labScale8"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
